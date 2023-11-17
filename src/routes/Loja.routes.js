@@ -4,14 +4,11 @@ import {
     ListarLoja,
     updateLoja,
     DeleteLoja,
-    ListarLojaId,
 } from "../controller/Loja.controller.js"
 
 const Lojarota = Router();
 
 Lojarota.get("/",ListarLoja ); 
-
-Lojarota.get("/:id",ListarLojaId );
 
 Lojarota.post("/",CreateLoja );
 

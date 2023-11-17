@@ -16,4 +16,8 @@ remove(id){
   this.lojas=this.lojas.
   filter((loja)=>loja.id !== id);
 }
+listar(){
+    return this.lojas;
+}
+
 }

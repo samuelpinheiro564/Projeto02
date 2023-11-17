@@ -143,13 +143,10 @@ export const DeleteLoja = (req, res) => {
     
 }
 export const ListarLoja = (req, res) => {
+    const lojas = new LojaList(lojas);
+    const list = lojas();
     return res.status(200).send({
-        message: `Essa é a lista de todos os itens ${lojaList.lojas}`
+        message: `Essa é a lista de todos os itens ${list}`
     });
 }
-export const ListarLojaId = (req, res) => {
-    const id = req.params;
-    return res.status(200).send({
-        message: `O item com o id:${id} foi encontrado com sucesso ${lojaList.lojas[id]}`
-    });
-}
+
