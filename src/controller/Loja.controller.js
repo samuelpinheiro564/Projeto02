@@ -143,8 +143,8 @@ export const DeleteLoja = (req, res) => {
     
 }
 export const ListarLoja = (req, res) => {
-    const lojas = new LojaList(lojas);
-    const list = lojas();
+//para definir a listar()  
+    const list = listar();
     return res.status(200).send({
         message: `Essa é a lista de todos os itens ${list}`
     });
