@@ -1,8 +1,14 @@
 import { Router } from "express";
-import {Lojarota  } from "./roupas.routes.js";
+import Membrorota   from "./membros.routes.js";
 
-const router = router();
+const router = Router();
 
-router.use("/roupas",Lojarota );
 
-export default Router;
+router.use("/membros",Membrorota );
+router.use("/membros/:id",Membrorota);
+
+router.get('/',(req,res)=>{
+    return res.status(200).send({message:"servidor funcionando "})
+})
+
+export default router;
