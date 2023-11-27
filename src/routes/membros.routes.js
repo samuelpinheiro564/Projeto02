@@ -1,5 +1,6 @@
 import { Router } from "express";
 import {
+    exibirMembros,
     CreateMembro,
     updatedMembro,
     DeleteMembro,
@@ -9,7 +10,7 @@ import {
 
 const Membrorota = Router();
 
-Membrorota.get("/",getAllMembro ); 
+Membrorota.get("/",exibirMembros );
 
 Membrorota.post("/",CreateMembro);
 

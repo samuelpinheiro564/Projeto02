@@ -7,6 +7,7 @@ class Membro{
         this.idade = idade;
         this.posicao = posicao;
         this.descricao = descricao;
+        this.senha =this.senha;
     }
     getnome(){
         return this.nome;
